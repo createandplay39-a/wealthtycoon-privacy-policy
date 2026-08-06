@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy – WealthTycoon </title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --gold: #f0a500;
+    --gold-dim: #a87200;
+    --bg: #0d0d0d;
+    --surface: #141414;
+    --border: #2a2a2a;
+    --text: #e0e0e0;
+    --muted: #777;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.75;
+    padding: 0 0 60px;
+  }
+
+  header {
+    background: linear-gradient(135deg, #111 0%, #1a1400 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 48px 24px 36px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '💰';
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.04;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  header .game-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 6vw, 40px);
+    color: var(--gold);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  header .doc-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .last-updated {
+    display: inline-block;
+    margin-top: 16px;
+    background: #1e1e1e;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 36px 0 32px;
+  }
+
+  .toc-title {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  .toc ol {
+    padding-left: 18px;
+  }
+
+  .toc li {
+    margin: 5px 0;
+  }
+
+  .toc a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+
+  .toc a:hover { color: var(--gold); }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--gold);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 .icon {
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+
+  p {
+    font-size: 15px;
+    color: #bbb;
+    margin-bottom: 12px;
+  }
+
+  .highlight-box {
+    background: #0f1a0f;
+    border: 1px solid #1e3a1e;
+    border-left: 3px solid #4ecb71;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #7ddc99;
+  }
+
+  .highlight-box strong {
+    color: #4ecb71;
+    font-weight: 500;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  ul li {
+    font-size: 15px;
+    color: #bbb;
+    margin: 6px 0;
+  }
+
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-top: 10px;
+  }
+
+  .contact-card p {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  .contact-card a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 44px 0 8px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    padding-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="game-title">WealthTycoon</div>
+  <div class="doc-label">Privacy Policy</div>
+  <div class="last-updated">Last updated: July 29, 2026</div>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#data">Information We Collect</a></li>
+      <li><a href="#local">Local Storage & Save Data</a></li>
+      <li><a href="#third-party">Advertising & Third-Party Services</a></li>
+      <li><a href="#choices">Your Ad Choices</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <section id="intro">
+    <h2><span class="icon">📋</span> Introduction</h2>
+    <p>
+      Welcome to <strong>WealthTycoon</strong>. This Privacy Policy explains how we handle information
+      when you play our game. We are committed to protecting your privacy and being transparent
+      about our practices.
+    </p>
+    <p>
+      By playing WealthTycoon, you agree to the practices described in this policy.
+    </p>
+  </section>
+
+  <section id="data">
+    <h2><span class="icon">🔍</span> Information We Collect</h2>
+
+    <div class="highlight-box">
+      <strong>Short answer:</strong> WealthTycoon itself does not require an account and does not
+      collect your name, email, location, or any device content. Your game progress stays on your
+      device. However, WealthTycoon shows optional rewarded video ads through Google AdMob, and
+      that advertising service does collect certain device and advertising data on our behalf, as
+      described below.
+    </div>
+
+    <p>Directly, WealthTycoon does <strong>not</strong> collect:</p>
+    <ul>
+      <li>Your name, email address, or any identifying information</li>
+      <li>Precise location data</li>
+      <li>Payment or financial information</li>
+      <li>Photos, contacts, or any other device content</li>
+    </ul>
+
+    <p>
+      However, because WealthTycoon uses Google AdMob to deliver optional rewarded video ads,
+      AdMob automatically collects certain information whenever an ad is loaded or shown, including:
+    </p>
+    <ul>
+      <li>Advertising ID (and, on newer devices, similar limited-tracking identifiers)</li>
+      <li>General device information (device model, operating system version, language, screen size)</li>
+      <li>IP address (used to derive an approximate, non-precise location such as country/region)</li>
+      <li>Ad interaction data (impressions, clicks, and whether a rewarded ad was completed)</li>
+    </ul>
+    <p>
+      This data is collected and processed by Google, not stored on our own servers, and is used
+      for ad delivery, frequency capping, fraud/abuse prevention, measurement, and — where you have
+      given consent — ad personalization. See the <a href="#third-party">Advertising & Third-Party
+      Services</a> section below for details and the <a href="#choices">Your Ad Choices</a> section
+      for how to control this.
+    </p>
+  </section>
+
+  <section id="local">
+    <h2><span class="icon">💾</span> Local Storage & Save Data</h2>
+    <p>
+      Your game progress (cash, investments, achievements, prestige level, etc.) is saved
+      exclusively on your own device using local storage. This data never leaves your device
+      and is not accessible to us or any third party.
+    </p>
+    <p>
+      You can clear this data at any time by uninstalling the app or clearing app data
+      through your device's settings.
+    </p>
+  </section>
+
+  <section id="third-party">
+    <h2><span class="icon">🔗</span> Advertising & Third-Party Services</h2>
+    <p>
+      WealthTycoon uses <strong>Google AdMob</strong> to show optional rewarded video ads (for
+      example, to unlock certain upgrades faster). We do not use any analytics SDKs, crash-reporting
+      SDKs, or social-platform integrations — AdMob is currently the only third-party service
+      integrated into the app.
+    </p>
+    <p>
+      When an ad is requested, loaded, or shown, Google AdMob may collect and process the data
+      listed in the <a href="#data">Information We Collect</a> section, and may share it with
+      Google and its advertising partners for the purposes described there. Google's own
+      collection and use of this data is governed by
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>
+      and, for how Google's advertising products work,
+      <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's Advertising Technologies page</a>.
+    </p>
+    <p>
+      Where required by law (for example, for users in the European Economic Area, the UK, and
+      Switzerland), we obtain consent for personalized advertising through a certified Consent
+      Management Platform before any personalized ad data is collected or used. If you do not
+      consent, you will still be shown ads, but they will not be personalized.
+    </p>
+    <p>
+      If future updates add other third-party services (such as analytics or leaderboards), this
+      policy will be updated before those features are released.
+    </p>
+  </section>
+
+  <section id="choices">
+    <h2><span class="icon">🎛️</span> Your Ad Choices</h2>
+    <p>You can control ad personalization and the use of your advertising identifier at any time:</p>
+    <ul>
+      <li>
+        On Android, go to <strong>Settings → Google → Ads</strong> to opt out of personalized
+        ads or reset your advertising ID.
+      </li>
+      <li>
+        Visit <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a>
+        to manage how Google personalizes ads across the services you use.
+      </li>
+      <li>
+        Uninstalling the app stops all further ad-related data collection by AdMob within
+        WealthTycoon.
+      </li>
+    </ul>
+    <p>
+      Opting out of ad personalization does not stop ads from being shown — it only means the
+      ads you see will no longer be based on your interests.
+    </p>
+  </section>
+
+  <section id="children">
+    <h2><span class="icon">👶</span> Children's Privacy</h2>
+    <p>
+      WealthTycoon is not directed at children under 13 (or the relevant age threshold under
+      local law, such as under 16 in parts of the European Economic Area), and we do not
+      knowingly design the game for, or knowingly collect personal data from, children in that
+      age group.
+    </p>
+    <p>
+      Because the app serves ads through Google AdMob, some device and advertising data described
+      in <a href="#data">Information We Collect</a> is processed even for general audiences. If we
+      become aware that a child under the applicable age has provided personal data to us directly,
+      we will take steps to delete it. If our app's listed target audience on the app store
+      includes children, ads are configured to serve only non-personalized, contextual advertising
+      to comply with Google Play Families Policies and applicable laws such as COPPA.
+    </p>
+    <p>
+      If you are a parent or guardian and have concerns about your child's use of the game or
+      about data collected via advertising, please contact us using the information below.
+    </p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="icon">⚖️</span> Your Rights</h2>
+    <p>
+      Depending on where you live, you may have rights over the data described in this policy —
+      for example, the right to know what is collected, to object to processing, or to request
+      deletion. Because WealthTycoon does not maintain user accounts or its own servers, most of
+      this data is held by Google as described above; you can exercise your choices directly
+      through the <a href="#choices">Your Ad Choices</a> controls, or contact us and we will help
+      direct your request or answer questions about our use of AdMob.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be reflected
+      by an updated "Last updated" date at the top of this page. We encourage you to review
+      this policy periodically.
+    </p>
+    <p>
+      Continued use of the game after any changes constitutes your acceptance of the
+      revised policy.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="icon">✉️</span> Contact Us</h2>
+    <p>
+      If you have any questions or concerns about this Privacy Policy, please contact us:
+    </p>
+    <div class="contact-card">
+      <p><strong>App:</strong> WealthTycoon</p>
+      <p><strong>Developer:</strong> CreateandPlay</p>
+      <p><strong>Email:</strong> <a href="mailto:createandplay39@gmail.com">createandplay39@gmail.com</a></p>
+    </div>
+  </section>
+
+  <hr class="divider">
+  <footer>
+    © 2026 WealthTycoon. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
